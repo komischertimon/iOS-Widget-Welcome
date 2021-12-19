@@ -1,8 +1,8 @@
 // Version 1.0
 
 // set Color
-let backColor = new Color("55555"),
-    fontColor = new Color("FFFFF"),
+let backColor = Color.black(),
+    fontColor = Color.white(),
     smallFont = new Font("Arial Nova Light", 18),
     bigFont = new Font("Arial Nova", 34);
 
@@ -87,18 +87,24 @@ w.backgroundColor = backColor
 
 //Text settings
 textPhrase.font = bigFont
+textPhrase.textColor = fontColor
 textName.font = bigFont
+textName.textColor = fontColor
 
 
 // Date settings
 date.applyDateStyle()
 date.font = smallFont
+date.textColor = fontColor
 textDate.font = smallFont
+textDate.textColor = fontColor
 
 // Battery settings
 battery.font = smallFont
+battery.textColor = fontColor
 btryIMG.imageSize = new Size(34,21)
 btryIMG.centerAlignImage()
+btryIMG.tintColor = fontColor
 
 
 if(btry >= 50) {
